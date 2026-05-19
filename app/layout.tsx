@@ -17,10 +17,21 @@ const _jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "GiGi Energy Drink | Dream Big, Drink GiGi",
-  description: "Zero sugar, 75mg caffeine, 100% natural flavors. The energy drink for dreamers and doers.",
-  keywords: ["energy drink", "zero sugar", "natural energy", "GiGi", "caffeine"],
-    generator: 'v0.app'
+  title: "Gittiom | Technology, Platforms & Innovation",
+  description: "Gittiom is a leading global technology company building the future through social platforms, payment systems, and smart digital infrastructure. Like Apple, Google, and Meta — Gittiom powers the next generation of connected experiences.",
+  keywords: ["Gittiom", "technology company", "social platform", "payment platform", "digital infrastructure", "fintech", "innovation", "tech conglomerate"],
+  openGraph: {
+    title: "Gittiom | Technology, Platforms & Innovation",
+    description: "Gittiom is a leading global technology company building the future through social platforms, payment systems, and smart digital infrastructure.",
+    url: "https://gittiom.com",
+    siteName: "Gittiom",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gittiom | Technology, Platforms & Innovation",
+    description: "Gittiom is a leading global technology company building the future through social platforms, payment systems, and smart digital infrastructure.",
+  },
 }
 
 export const viewport: Viewport = {
