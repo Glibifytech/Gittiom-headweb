@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "Gittiom | Technology, Platforms & Innovation",
   description: "Gittiom is a leading global technology company building the future through social platforms, payment systems, and smart digital infrastructure. Like Apple, Google, and Meta — Gittiom powers the next generation of connected experiences.",
   keywords: ["Gittiom", "technology company", "social platform", "payment platform", "digital infrastructure", "fintech", "innovation", "tech conglomerate"],
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
+  manifest: "/manifest.json",
   openGraph: {
     title: "Gittiom | Technology, Platforms & Innovation",
     description: "Gittiom is a leading global technology company building the future through social platforms, payment systems, and smart digital infrastructure.",
