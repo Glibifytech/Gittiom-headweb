@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { useLenis } from "lenis/react"
 import { Menu, X } from "lucide-react"
 
@@ -79,6 +80,13 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/Gittiom Black.svg"
+            alt="Gittiom Logo"
+            width={28}
+            height={28}
+            className="opacity-90 hover:opacity-100 transition-opacity"
+          />
           <motion.span
             className="text-2xl font-black tracking-tighter"
             whileHover={{ scale: 1.05 }}

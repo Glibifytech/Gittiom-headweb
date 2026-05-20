@@ -26,11 +26,20 @@ export const metadata: Metadata = {
     url: "https://gittiom.com",
     siteName: "Gittiom",
     type: "website",
+    images: [
+      {
+        url: "https://gittiom.com/Gittiom Black.svg",
+        width: 1200,
+        height: 630,
+        alt: "Gittiom Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Gittiom | Technology, Platforms & Innovation",
     description: "Gittiom is a leading global technology company building the future through social platforms, payment systems, and smart digital infrastructure.",
+    images: ["https://gittiom.com/Gittiom Black.svg"],
   },
 }
 

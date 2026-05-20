@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion"
 import { useState, useRef } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -227,6 +228,22 @@ export function Footer() {
           >
             made with energy
           </motion.p>
+        </motion.div>
+
+        <motion.div
+          className="flex justify-center mt-8 mb-4"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+        >
+          <Image
+            src="/Gittiom Black.svg"
+            alt="Gittiom Logo"
+            width={40}
+            height={40}
+            className="opacity-80 hover:opacity-100 transition-opacity"
+          />
         </motion.div>
       </div>
 
