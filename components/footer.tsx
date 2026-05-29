@@ -61,7 +61,7 @@ export function Footer() {
   ]
 
   return (
-    <footer ref={footerRef} id="careers" className="relative bg-[#121212] pt-16 pb-6 overflow-hidden">
+    <footer ref={footerRef} id="careers" className="relative bg-white pt-16 pb-6 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -70,7 +70,7 @@ export function Footer() {
           transition={{ duration: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter leading-[0.9] overflow-hidden">
+          <h2 className="text-4xl md:text-6xl font-black text-[#121212] tracking-tighter leading-[0.9] overflow-hidden">
             <motion.span
               className="block"
               initial={{ y: 100 }}
@@ -106,7 +106,7 @@ export function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="your@email.com"
-                className="w-full bg-white/5 border-2 border-white/20 rounded-xl px-4 py-3 text-white placeholder:text-white/40 font-mono text-sm focus:outline-none focus:border-[#AFFF00] transition-all duration-300"
+                className="w-full bg-[#121212]/5 border-2 border-[#121212]/20 rounded-xl px-4 py-3 text-[#121212] placeholder:text-[#121212]/40 font-mono text-sm focus:outline-none focus:border-[#AFFF00] transition-all duration-300"
                 whileFocus={{ borderColor: "#AFFF00" }}
               />
               <motion.div
@@ -137,7 +137,7 @@ export function Footer() {
             </motion.button>
           </div>
           <motion.p
-            className="text-white/40 font-mono text-xs mt-2 text-center"
+            className="text-[#121212]/60 font-mono text-xs mt-2 text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -154,28 +154,28 @@ export function Footer() {
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
         >
-          <p className="text-white/60 font-mono text-xs max-w-xl mx-auto leading-relaxed">
+          <p className="text-[#121212]/60 font-mono text-xs max-w-xl mx-auto leading-relaxed">
             GiGi Energy is a better-for-you energy drink crafted with natural flavors, zero sugar, and a clean energy
             formula. Fuel your ambition without the crash.
           </p>
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 border-t border-white/10"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 border-t border-[#121212]/10"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
           {footerLinks.map((section, sectionIndex) => (
             <motion.div key={section.title} variants={itemVariants}>
-              <h4 className="font-bold text-white text-sm mb-3">{section.title}</h4>
+              <h4 className="font-bold text-[#121212] text-sm mb-3">{section.title}</h4>
               <ul className="space-y-2">
                 {section.links.map((item) => (
                   <li key={item}>
                     <motion.div whileHover={{ x: 4 }} transition={{ type: "spring", stiffness: 400, damping: 17 }}>
                       <Link
                         href="#"
-                        className="text-white/60 hover:text-[#AFFF00] font-mono text-xs transition-colors inline-block"
+                        className="text-[#121212]/60 hover:text-[#AFFF00] font-mono text-xs transition-colors inline-block"
                       >
                         {item}
                       </Link>
@@ -188,7 +188,7 @@ export function Footer() {
         </motion.div>
 
         <motion.div
-          className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-white/10 gap-3"
+          className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-[#121212]/10 gap-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -200,15 +200,15 @@ export function Footer() {
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             <span className="text-xl font-black">
-              <span className="text-white">Gitti</span>
+              <span className="text-[#121212]">Gitti</span>
               <span className="text-[#AFFF00]">om</span>
             </span>
           </motion.div>
 
-          <p className="text-white/40 font-mono text-xs">© 2026 Gittiom Energy. All rights reserved.</p>
+          <p className="text-[#121212]/40 font-mono text-xs">© 2026 Gittiom Energy. All rights reserved.</p>
 
           <motion.p
-            className="text-white/30 font-mono text-xs cursor-pointer"
+            className="text-[#121212]/30 font-mono text-xs cursor-pointer"
             onHoverStart={() => setIsHovering(true)}
             onHoverEnd={() => setIsHovering(false)}
             animate={
@@ -221,7 +221,7 @@ export function Footer() {
                 : {
                     rotate: 0,
                     scale: 1,
-                    color: "rgba(255,255,255,0.3)",
+                    color: "rgba(18,18,18,0.3)",
                   }
             }
             transition={{ duration: 0.5 }}
@@ -248,7 +248,7 @@ export function Footer() {
       </div>
 
       <motion.div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[15rem] md:text-[30rem] font-black text-white/[0.02] pointer-events-none select-none leading-none"
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[15rem] md:text-[30rem] font-black text-[#121212]/[0.02] pointer-events-none select-none leading-none"
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}

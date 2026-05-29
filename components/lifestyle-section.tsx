@@ -64,7 +64,7 @@ export function LifestyleSection() {
   const isCardsInView = useInView(cardsRef, { once: true, margin: "-50px" })
 
   return (
-    <section className="relative py-32 bg-[#121212] overflow-hidden">
+    <section className="relative py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -82,7 +82,7 @@ export function LifestyleSection() {
           >
             COMMUNITY
           </motion.span>
-          <h2 className="text-4xl md:text-7xl font-black text-white tracking-tighter mt-4 overflow-hidden">
+          <h2 className="text-4xl md:text-7xl font-black text-[#121212] tracking-tighter mt-4 overflow-hidden">
             <motion.span
               className="inline-block"
               initial={{ y: 100 }}
@@ -161,7 +161,7 @@ export function LifestyleSection() {
                 scale: 1.02,
                 transition: { type: "spring", stiffness: 400, damping: 17 },
               }}
-              className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 cursor-pointer"
+              className="bg-[#121212]/5 backdrop-blur-sm rounded-2xl p-6 border border-[#121212]/10 cursor-pointer"
             >
               <div className="flex items-center gap-3 mb-4">
                 <motion.div
@@ -171,11 +171,11 @@ export function LifestyleSection() {
                 >
                   <span className="text-[#AFFF00] font-bold text-sm">{post.handle.charAt(1).toUpperCase()}</span>
                 </motion.div>
-                <span className="font-mono text-white/60 text-sm">{post.handle}</span>
+                <span className="font-mono text-[#121212]/60 text-sm">{post.handle}</span>
               </div>
-              <p className="text-white text-lg leading-relaxed">{post.text}</p>
+              <p className="text-[#121212] text-lg leading-relaxed">{post.text}</p>
               <motion.div
-                className="flex items-center gap-2 mt-4 text-white/40 font-mono text-sm"
+                className="flex items-center gap-2 mt-4 text-[#121212]/40 font-mono text-sm"
                 whileHover={{ color: "#AFFF00" }}
                 transition={{ duration: 0.2 }}
               >
