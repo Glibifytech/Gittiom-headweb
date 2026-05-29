@@ -113,7 +113,7 @@ export function Navigation() {
               key={item.label}
               onClick={() => scrollToSection(item.href)}
               className={`text-sm font-medium tracking-wide transition-colors relative ${
-                scrolled ? "text-white/80 hover:text-[#AFFF00]" : "text-[#121212]/80 hover:text-[#121212]"
+                scrolled ? "text-[#121212]/80 hover:text-[#121212]" : "text-[#121212]/80 hover:text-[#121212]"
               }`}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -195,14 +195,14 @@ export function Navigation() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
-            className="md:hidden bg-[#121212]/95 backdrop-blur-md border-t border-white/10 overflow-hidden"
+            className="md:hidden bg-white border-t border-[#121212]/10 overflow-hidden"
           >
             <div className="px-6 py-4 space-y-4">
               {navLinks.map((item, i) => (
                 <motion.button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-white/80 hover:text-[#AFFF00] text-lg font-medium py-2"
+                  className="block w-full text-left text-[#121212]/80 hover:text-[#AFFF00] text-lg font-medium py-2"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.1 }}
